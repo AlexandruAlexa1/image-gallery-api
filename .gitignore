@@ -1,0 +1,16 @@
+# Maven build
+/target/
+.mvn/wrapper/maven-wrapper.jar
+
+# IDE (STS/Eclipse)
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# OS files
+.DS_Store
+Thumbs.db
