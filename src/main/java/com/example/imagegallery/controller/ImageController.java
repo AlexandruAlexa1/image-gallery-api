@@ -18,7 +18,11 @@ import com.example.imagegallery.service.ImageService;
 
 import lombok.RequiredArgsConstructor;
 
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = {
+ "http://localhost:4200",
+ "http://angular-image-gallery-frontend.s3-website-us-east-1.amazonaws.com",
+ "https://d2c19ha9yft0hf.cloudfront.net"
+})
 @RestController
 @RequestMapping("/api/images")
 @RequiredArgsConstructor
