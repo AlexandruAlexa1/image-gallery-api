@@ -1,6 +1,6 @@
 # Image Gallery API
 
-![Build and Deploy](https://github.com/AlexandruAlexa1/image-gallery-api/actions/workflows/build-and-deploy.yml/badge.svg?branch=main)
+![Build and Deploy](https://github.com/AlexandruAlexa1/image-gallery-api/actions/workflows/build-deploy.yml/badge.svg?branch=main)
 ![Java Version](https://img.shields.io/badge/java-17-blue)
 ![License](https://img.shields.io/github/license/AlexandruAlexa1/image-gallery-api)
 ![Repo Size](https://img.shields.io/github/repo-size/AlexandruAlexa1/image-gallery-api)
@@ -79,6 +79,8 @@ POST /api/images/upload-url?fileName=test.png&contentType=image/png
 - Pre-signed URLs for secure file upload
 - CI/CD with GitHub Actions
 - Cloud deployment and scalable architecture
+- CI/CD with GitHub Actions (build, test, deploy)
+- Automated HTML test reporting ([View Test Report](https://AlexandruAlexa1.github.io/image-gallery-api/))
 
 ---
 
