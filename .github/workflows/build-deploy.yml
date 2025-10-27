@@ -26,7 +26,7 @@ jobs:
         run: mvn surefire-report:report
 
       - name: Upload test report artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: Test Report HTML
           path: target/site
@@ -60,7 +60,7 @@ jobs:
         run: zip -r application.zip target/*.jar
 
       - name: Upload application artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: Application Build
           path: application.zip
@@ -71,7 +71,7 @@ jobs:
 
     steps:
       - name: Download application artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: Application Build
           path: .
