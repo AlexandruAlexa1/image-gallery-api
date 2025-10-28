@@ -59,7 +59,7 @@ jobs:
         run: mvn clean package -DskipTests
 
       - name: Zip application files
-        run: zip -r application.zip target/*.jar
+        run: zip -j application.zip target/*.jar
 
       - name: Upload application artifact
         uses: actions/upload-artifact@v4
