@@ -30,6 +30,9 @@ jobs:
       - name: Generate HTML test report
         run: mvn surefire-report:report
 
+      - name: Prepare index for GitHub Pages
+        run: cp target/site/surefire-report.html target/site/index.html
+
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
